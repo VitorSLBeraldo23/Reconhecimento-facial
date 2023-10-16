@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Pangolin&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+
+
+    <title>Quems é o membro da família?</title>
+</head>
+
+<body>
+    <center>
+    <div id="cabecalho" class="container">
+
+   <h1>App quem é o membro da família?</h1>
+
+    </div>    
+
+    <ul>
+        <li id="li1">Eu</li>
+        <li id="li2">Pai</li>
+        <li id="li3">Mãe</li>
+        <li id="li4">Avó</li>
+    </ul>
+   <h2>Visualização da webcam</h2>
+    <div id="camera"></div>
+
+    <h2>Imagem capturada</h2>
+    <div id="result"></div>
+
+    <button class="btn btn-success" onclick="takeSnapshot()">Capturar</button>
+    <button class="btn btn-success" onclick="identifique()">Identificar membro</button>
+
+    <div id="name"></div>
+</center>
+<script src="main.js"></script>
+</body>
+
+</html>
